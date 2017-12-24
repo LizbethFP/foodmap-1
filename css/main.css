@@ -1,0 +1,14 @@
+body {
+  background-color: #2b2b2b;
+  font-family: 'Raleway', sans-serif;
+  color: #ffb300;
+}
+
+.map {
+  border-style: none;
+  border-image: none;
+}
+
+.fa.icon {
+  display: table-cell;
+}
