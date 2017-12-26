@@ -2,8 +2,8 @@ var data = [
   {
     'name': 'Restaurante El Cardenal',
     'location': {
-      'coordinate x': 19.347198,
-      'coordinate y': -99.188840
+      'lat': 19.347198,
+      'lng': -99.188840
     },
     'country': 'Mexico',
     'direction': 'Av. de la Paz # 32 | Col. San Ángel, Ciudad de México',
@@ -29,8 +29,8 @@ var data = [
     'name': 'Trattoria della Casa Nuova',
     'type food': 'Italiana',
     'location': {
-      'coordinate x': 19.346844,
-      'coordinate y': -99.188971
+      'lat': 19.346844,
+      'lng': -99.188971
     },
     'country': 'Mexico',
     'direction': 'Avenida de la Paz 40, San Ángel, Ciudad de México',
@@ -56,8 +56,8 @@ var data = [
     'name': 'Perú Gourmet',
     'type food': 'Peruana',
     'location': {
-      'coordinate x': -12.045560,
-      'coordinate y': -77.030645
+      'lat': -12.045560,
+      'lng': -77.030645
     },
     'country': 'Perú',
     'direction': 'Pasaje Santa Rosa 165, Cercado de Lima',
@@ -83,8 +83,8 @@ var data = [
     'name': 'El Rinconcito Arequipeño',
     'type food': 'Peruana',
     'location': {
-      'coordinate x': -12.083779,
-      'coordinate y': -77.031331
+      'lat': -12.083779,
+      'lng': -77.031331
     },
     'country': 'Perú',
     'direction': 'José Bernardo Alcedo 514, Lince',
@@ -110,8 +110,8 @@ var data = [
 	    'name': 'Maido',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.125455,
-	      'coordinate y': -77.030562
+	      'lat': -12.125455,
+	      'lng': -77.030562
 	    },
 	    'country': 'Perú',
 	    'direction': 'Calle San Martin 399, Miraflores',
@@ -137,8 +137,8 @@ var data = [
 	    'name': 'Costanera 700',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.116711,
-	      'coordinate y': -77.045214
+	      'lat': -12.116711,
+	      'lng': -77.045214
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. Del Ejercito 421, Lima',
@@ -164,8 +164,8 @@ var data = [
 	    'name': 'Osaka Pardo and Aliaga',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.106001,
-	      'coordinate y': -77.038750
+	      'lat': -12.106001,
+	      'lng': -77.038750
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. Pardo y Aliaga 640, San Isidro',
@@ -191,8 +191,8 @@ var data = [
 	    'name': 'Edo Sushi Bar Miraflores',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.120124,
-	      'coordinate y': -77.035911
+	      'lat': -12.120124,
+	      'lng': -77.035911
 	    },
 	    'country': 'Perú',
 	    'direction': 'Calle Berlin 601, Miraflores',
@@ -218,8 +218,8 @@ var data = [
 	    'name': 'Ache',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.128603,
-	      'coordinate y': -77.026598
+	      'lat': -12.128603,
+	      'lng': -77.026598
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. la Paz 1055, Miraflores',
@@ -245,8 +245,8 @@ var data = [
 	    'name': 'La Bistecca',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.106582,
-	      'coordinate y': -77.037253
+	      'lat': -12.106582,
+	      'lng': -77.037253
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. Los Conquistadores 1048, San Isidro',
@@ -272,8 +272,8 @@ var data = [
 	    'name': 'Tzuru Restaurante Nikkei',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.096922,
-	      'coordinate y': -77.016002
+	      'lat': -12.096922,
+	      'lng': -77.016002
 	    },
 	    'country': 'Perú',
 	    'direction': 'Calle 21, #707, Lima',
@@ -299,8 +299,8 @@ var data = [
 	    'name': 'Osaka',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.101913,
-	      'coordinate y': -77.971430
+	      'lat': -12.101913,
+	      'lng': -77.971430
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. El Polo # 660, Santiago de surco',
@@ -326,8 +326,8 @@ var data = [
 	    'name': 'DonDoh',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.106145,
-	      'coordinate y': -77.037036
+	      'lat': -12.106145,
+	      'lng': -77.037036
 	    },
 	    'country': 'Perú',
 	    'direction': 'Av. Conquistadores #999, San Isidro',
@@ -353,8 +353,8 @@ var data = [
 	    'name': 'Sushi Cage Swissôtel Lima',
 	    'type food': 'Japonesa',
 	    'location': {
-	      'coordinate x': -12.097466,
-	      'coordinate y': -77.038026
+	      'lat': -12.097466,
+	      'lng': -77.038026
 	    },
 	    'country': 'Perú',
 	    'direction': 'Avenida Santo Toribio 173-Via Central 150 | Swissotel, Lima',
@@ -380,8 +380,8 @@ var data = [
     'name': 'Restaurant el Sillar',
     'type food': 'Peruana',
     'location': {
-      'coordinate x': -12.117631,
-      'coordinate y': -77.030284
+      'lat': -12.117631,
+      'lng': -77.030284
     },
     'country': 'Perú',
     'direction': 'Calle Atahualpa 229, Miraflores',
@@ -407,8 +407,8 @@ var data = [
     'name': 'Rinconcito Punto y Sabor Arequipa',
     'type food': 'Peruana',
     'location': {
-      'coordinate x': -12.084607,
-      'coordinate y': -77.030101
+      'lat': -12.084607,
+      'lng': -77.030101
     },
     'country': 'Perú',
     'direction': 'Av. Francisco Lazo 2055, Lince',
@@ -434,8 +434,8 @@ var data = [
     'name': 'La Muralla',
     'type food': 'Peruana',
     'location': {
-      'coordinate x': -12.052238,
-      'coordinate y': -77.034036
+      'lat': -12.052238,
+      'lng': -77.034036
     },
     'country': 'Perú',
     'direction': 'Av. Nicolás de Piérola 1018, Cercado de Lima',
@@ -461,8 +461,8 @@ var data = [
     'name': 'Taqueria No Te Rajes',
     'type food': 'Mexicana',
     'location': {
-      'coordinate x': -12.125587,
-      'coordinate y': -77.021341
+      'lat': -12.125587,
+      'lng': -77.021341
     },
     'country': 'Perú',
     'direction': 'Av. Alfredo Benavides 1083, Miraflores',
@@ -488,8 +488,8 @@ var data = [
     'name': 'Como Agua para Chocolate',
     'type food': 'Mexicana',
     'location': {
-      'coordinate x': -12.096833,
-      'coordinate y': -77.035490
+      'lat': -12.096833,
+      'lng': -77.035490
     },
     'country': 'Perú',
     'direction': 'Pancho Fierro 108, San Isidro',
@@ -515,8 +515,8 @@ var data = [
     'name': 'Chili´s',
     'type food': 'Mexicana',
     'location': {
-      'coordinate x': -12.132703,
-      'coordinate y': -77.031631
+      'lat': -12.132703,
+      'lng': -77.031631
     },
     'country': 'Perú',
     'direction': 'Larcomar, Malecón de la Reserva 610, Miraflores',
@@ -542,8 +542,8 @@ var data = [
     'name': 'Chili´s',
     'type food': 'Mexicana',
     'location': {
-      'coordinate x': -12.118573,
-      'coordinate y': -77.032809
+      'lat': -12.118573,
+      'lng': -77.032809
     },
     'country': 'Perú',
     'direction': 'Av. José Pardo 293, Miraflores',
@@ -569,8 +569,8 @@ var data = [
     'name': 'Chili´s',
     'type food': 'Mexicana',
     'location': {
-      'coordinate x': -12.112300,
-      'coordinate y': -77.011541
+      'lat': -12.112300,
+      'lng': -77.011541
     },
     'country': 'Perú',
     'direction': 'Av Tomás Marsano 961, Surquillo',
@@ -596,8 +596,8 @@ var data = [
     'name': 'Arepa Cafe',
     'type food': 'Venezolana',
     'location': {
-      'coordinate x': -12.145215,
-      'coordinate y': -77.021681
+      'lat': -12.145215,
+      'lng': -77.021681
     },
     'country': 'Perú',
     'direction': 'Av Almirante Miguel Grau N° 624, Barranco',
@@ -623,8 +623,8 @@ var data = [
     'name': 'El Budare Resto Bar',
     'type food': 'Venezolana',
     'location': {
-      'coordinate x': -12.145559,
-      'coordinate y': -77.018984
+      'lat': -12.145559,
+      'lng': -77.018984
     },
     'country': 'Perú',
     'direction': 'Manuel Segura 123, Barranco',
@@ -650,8 +650,8 @@ var data = [
     'name': 'La Bodega de la Trattoria',
     'type food': 'Italiana',
     'location': {
-      'coordinate x': -12.1119517,
-      'coordinate y': -77.033144
+      'lat': -12.1119517,
+      'lng': -77.033144
     },
     'country': 'Perú',
     'direction': 'Calle General Borgoño 748, Miraflores',
@@ -677,8 +677,8 @@ var data = [
     'name': 'La Bodega de la Trattoria',
     'type food': 'Italiana',
     'location': {
-      'coordinate x': -12.076449,
-      'coordinate y': -77.082461
+      'lat': -12.076449,
+      'lng': -77.082461
     },
     'country': 'Perú',
     'direction': 'Plaza San Miguel, Av. La Marina 2000, San Miguel',

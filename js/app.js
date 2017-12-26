@@ -68,25 +68,25 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setContent(browserHasGeolocation ?
     'Error: The Geolocation service failed.' :
     'Error: Your browser doesn\'t support geolocation.');
-}
 
-var coordinates = [];
-var labels = [];
+  var coordinates = [];
+  var labels = [];
 
-for (var i in data) {
-  coordinates.push(data[i].location);
-  labels.push(data[i].name);
-}
+  for (var i in data) {
+    coordinates.push(data[i].location);
+    labels.push(data[i].name);
+  }
 
-var markers = locations.map(function(location, i) {
-  return new google.maps.Marker({
-    position: location,
-    label: labels[i]
+  var markers = locations.map(function(location, i) {
+    return new google.maps.Marker({
+      position: location,
+      label: labels[i]
+    });
   });
-});
 
-// Add a marker clusterer to manage the markers.
-var markerCluster = new MarkerClusterer(map, markers,
-  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+  // Add a marker clusterer to manage the markers.
+  var markerCluster = new MarkerClusterer(map, markers,
+    {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 
-var locations = coordinates;
+  var locations = coordinates;
+}
