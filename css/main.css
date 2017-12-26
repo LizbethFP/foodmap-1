@@ -17,11 +17,14 @@ body {
 
 .loading-splash {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #2b2b2b;
   z-index: 999;
-  transition: opacity .2s .75s ease-in-out;
 }
+
 .loading-splash.loaded {
   opacity: 0;
 }
@@ -37,7 +40,7 @@ body {
 .foodmap-logo {
   width: 60px;
   height: 90px;
-  fill: #fff;  
+  fill: #fff;
 }
 
 .loading-text {
@@ -48,27 +51,32 @@ body {
 
 .loading-text .letter {
   display: inline-block;
-  transition: transform .5s linear,
-              opacity   .5s linear;
+  transition: transform .5s linear, opacity .5s linear;
   opacity: 0;
-  transform: rotate3d(.1, 1, 0, 90deg)
-             translate3d(0, 15%, 0);
+  transform: rotate3d(.1, 1, 0, 90deg) translate3d(0, 15%, 0);
 }
 
 .loading-text .letter.visible {
   opacity: 1;
-  transform: rotate3d(0, 0, 0, 90deg)
-             translate3d(0, 0, 0);
+  transform: rotate3d(0, 0, 0, 90deg) translate3d(0, 0, 0);
 }
 
 @-webkit-keyframes hop {
-  0% { transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
- 100% { transform: scale3d(1.2, 1.2, 1) translate3d(0, -80%, 0); }
+  0% {
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale3d(1.2, 1.2, 1) translate3d(0, -80%, 0);
+  }
 }
 
 @-webkit-keyframes duck {
-  0% { transform:  translate3d(0, 0, 0); }
- 100% { transform: translate3d(0, 10%, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 10%, 0);
+  }
 }
 
 /*fin splash screen*/
