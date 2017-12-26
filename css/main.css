@@ -33,20 +33,12 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  text-align: center;
   transform: translate3d(-50%, -50%, 0);
 }
 
-.foodmap-logo {
-  width: 60px;
-  height: 90px;
-  fill: #fff;
-}
-
 .loading-text {
-  margin-top: 0;
   color: #f7b617;
-  font-family: 'proxima-nova-2', Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .loading-text .letter {

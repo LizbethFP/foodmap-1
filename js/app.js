@@ -39,6 +39,6 @@ $(document).ready(function() {
   splash();
 
   setTimeout(function() {
-    $('#splash-screen').fadeOut(1500);
+   $('#splash-screen').fadeOut(1500);
   }, 3000);
 });
