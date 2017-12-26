@@ -42,11 +42,10 @@
         </div>
       </div>
     </div>
-    <section class="container" id="main">
+    <section class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.796403138974!2d-77.0228706857207!3d-12.126078446681245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8033db388c3%3A0x73793f367683122!2sAv.+Alfredo+Benavides+1180%2C+Cercado+de+Lima+15047!5e0!3m2!1ses-419!2spe!4v1513439847929"
-            class="map center-block" allowfullscreen></iframe>
+        <div class="col-xs-12" id="map">
+
         </div>
       </div>
     </section>
@@ -64,6 +63,9 @@
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6rjMeHx_5BKT9KMTXXL4rLnjmjp_bDk&callback=initMap">
+    </script>
   <script src="./js/data.js"></script>
   <script type="text/javascript" src="./js/app.js"></script>
 </body>
