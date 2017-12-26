@@ -31,14 +31,15 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $('#splash-screen').fadeOut(1500);
-  }, 3000);
+  }, 3000);  
+});
 
-  // geolocalización
+// geolocalización
   function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397,
-        lng: 150.644},
-      zoom: 6
+    var map = new google.maps.Map($('#map')[0], {
+      center: {	lat: -34.397,
+        		lng: 150.644},
+      			zoom: 6
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -68,4 +69,3 @@ $(document).ready(function() {
       'Error: The Geolocation service failed.' :
       'Error: Your browser doesn\'t support geolocation.');
   }  
-});
