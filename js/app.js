@@ -38,22 +38,21 @@ $(document).ready(function() {
       lookup: currencies,
       onSelect: function(suggestion) {
         var inputFilter = $(this).val();
-        console.log(suggestion.value);
-        //realizamos el filtro 
-        for(var i in data) {
-          if (data[i].type == inputFilter) {
-            console.log(data[i])
+        // realizamos el filtro
+        for (var i in data) {
+          if (data[i].type === inputFilter) {
             var nameRestaurant = data[i].name;
-            $('#suggestion').append(nameRestaurant);
-            var directionRestaurant = data[i].direction;
-            $('#suggestion').append(directionRestaurant);
+            var infRestaurant = $('<p/>', {
+                'class' : 'col-xs-12',
+                'id'    : 'id_' + i
+            });
+            $('#suggestion').append(infRestaurant);
+            $('#id_'+ i).append(nameRestaurant);
           }
         }
       }
     });
-   
   });
-
 });
 
 // geolocalización

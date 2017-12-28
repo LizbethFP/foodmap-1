@@ -1,7 +1,7 @@
 var data = [
   {
     'name': 'Restaurante El Cardenal',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'http://www.seriouseats.com/recipes/images/2013/04/20130427-tacos-al-pastor-new-01.jpg',
     'location': {
       'lat': 19.347198,
@@ -26,7 +26,7 @@ var data = [
   },
   {
     'name': 'Trattoria della Casa Nuova',
-    'type': 'Italiana',
+    'type': 'Comida italiana',
     'photo': 'https://media-cdn.tripadvisor.com/media/photo-s/09/f3/4c/5f/insalata-di-gambas-et.jpg',
     'location': {
       'lat': 19.346844,
@@ -51,7 +51,7 @@ var data = [
   },
   {
     'name': 'Perú Gourmet',
-    'type': 'Peruana',
+    'type': 'Comida peruana',
     'photo': 'https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg',
     'location': {
       'lat': -12.045560,
@@ -76,8 +76,8 @@ var data = [
   },
   {
     'name': 'El Rinconcito Arequipeño',
-    'type': 'Peruana',
-    'photo' 'http://perudelights.com/wp-content/uploads/2012/04/r4.jpg',
+    'type': 'Comida peruana',
+    'photo': 'http://perudelights.com/wp-content/uploads/2012/04/r4.jpg',
     'location': {
       'lat': -12.083779,
       'lng': -77.031331
@@ -101,8 +101,8 @@ var data = [
   },
   {
 	  'name': 'Maido',
-	  'type': 'Japonesa',
-    'photo':'http://perudelights.com/wp-content/uploads/2012/04/r4.jpg',
+	  'type': 'Comida japonesa',
+    'photo': 'http://perudelights.com/wp-content/uploads/2012/04/r4.jpg',
 	  'location': {
 	    'lat': -12.125455,
 	    'lng': -77.030562
@@ -126,7 +126,7 @@ var data = [
 	  },
   {
 	  'name': 'Costanera 700',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'http://www.sushiole.com/wp-content/uploads/2013/03/sashimi-mixto.jpg',
 	  'location': {
 	    'lat': -12.116711,
@@ -151,8 +151,8 @@ var data = [
   },
   {
 	  'name': 'Osaka Pardo and Aliaga',
-	  'type': 'Japonesa',
-    'photo': 'https://media-cdn.tripadvisor.com/media/photo-s/0f/a3/31/69/maki-crab-rollo-envuelto.jpg'
+	  'type': 'Comida japonesa',
+    'photo': 'https://media-cdn.tripadvisor.com/media/photo-s/0f/a3/31/69/maki-crab-rollo-envuelto.jpg',
 	  'location': {
 	    'lat': -12.106001,
 	    'lng': -77.038750
@@ -176,7 +176,7 @@ var data = [
   },
   {
 	  'name': 'Edo Sushi Bar Miraflores',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'https://media-cdn.tripadvisor.com/media/photo-s/02/1e/5e/48/maki-acevichado-samurai.jpg',
 	  'location': {
 	    'lat': -12.120124,
@@ -201,7 +201,7 @@ var data = [
   },
   {
 	  'name': 'Ache',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'https://i.pinimg.com/736x/47/d8/67/47d86747f2b96a6e458ce257b425afee--ikura-sushi-sushi-recipes.jpg',
 	  'location': {
 	      'lat': -12.128603,
@@ -226,7 +226,7 @@ var data = [
   },
   {
 	  'name': 'La Bistecca',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'https://i.pinimg.com/736x/47/d8/67/47d86747f2b96a6e458ce257b425afee--ikura-sushi-sushi-recipes.jpg',
 	  'location': {
 	    'lat': -12.106582,
@@ -251,7 +251,7 @@ var data = [
   },
   {
 	  'name': 'Tzuru Restaurante Nikkei',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'http://www.secretsofsushi.com/wp-content/uploads/2014/07/Nigiri3.jpg',
 	  'location': {
 	    'lat': -12.096922,
@@ -276,7 +276,7 @@ var data = [
   },
   {
 	  'name': 'Osaka',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'https://img.grouponcdn.com/deal/hfefAup1zQWBE2K8sWURgS27xax/hf-846x508/v1/c700x420.jpg',
 	  'location': {
 	    'lat': -12.101918,
@@ -301,7 +301,7 @@ var data = [
   },
   {
 	  'name': 'DonDoh',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'http://prettymayhem.com/wp-content/uploads/2015/09/japanese-salmon-tataki.jpg',
 	  'location': {
 	    'lat': -12.106145,
@@ -326,7 +326,7 @@ var data = [
   },
   {
 	  'name': 'Sushi Cage Swissôtel Lima',
-	  'type': 'Japonesa',
+	  'type': 'Comida japonesa',
     'photo': 'https://www.manusmenu.com/wp-content/uploads/2016/05/1-Salmon-Sashimi-with-Ponzu-3-1-of-1.jpg',
 	  'location': {
 	    'lat': -12.097466,
@@ -351,7 +351,7 @@ var data = [
   },
   {
     'name': 'Restaurant el Sillar',
-    'type': 'Peruana',
+    'type': 'Comida peruana',
     'photo': 'http://www.enperu.org/gastronomia/wp-content/uploads/2016/06/soltero-de-queso-arequipa-grande.jpg',
     'location': {
       'lat': -12.117631,
@@ -376,7 +376,7 @@ var data = [
   },
   {
     'name': 'Rinconcito Punto y Sabor Arequipa',
-    'type': 'Peruana',
+    'type': 'Comida peruana',
     'photo': 'https://i.ytimg.com/vi/Vj9X8bfxoew/maxresdefault.jpg',
     'location': {
       'lat': -12.084607,
@@ -401,7 +401,7 @@ var data = [
   },
   {
     'name': 'La Muralla',
-    'type': 'Peruana',
+    'type': 'Comida peruana',
     'photo': 'http://images-gmi-pmc.edge-generalmills.com/912d285a-5205-4f15-aef6-8eeb025b496f.jpg',
     'location': {
       'lat': -12.052238,
@@ -426,7 +426,7 @@ var data = [
   },
   {
     'name': 'Taqueria No Te Rajes',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'https://hispanickitchen.com/wp-content/uploads/2017/04/Elote-larger-compressed-1500-Ana.jpg',
     'location': {
       'lat': -12.125587,
@@ -451,7 +451,7 @@ var data = [
   },
   {
     'name': 'Como Agua para Chocolate',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'http://www.simplyrecipes.com/wp-content/uploads/2014/05/guacamole-horiz-a-1600.jpg',
     'location': {
       'lat': -12.096833,
@@ -476,7 +476,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/4/5/0/RX-FNM_050111-TTAH-0082_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371595357950.jpeg',
     'location': {
       'lat': -12.132703,
@@ -501,7 +501,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'http://cdn2.cocinadelirante.com/sites/default/files/images/2017/05/sopadetortilla.jpg',
     'location': {
       'lat': -12.118573,
@@ -526,7 +526,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type': 'Mexicana',
+    'type': 'Comida mexicana',
     'photo': 'https://atmedia.imgix.net/0e56ab38542c762f226df9866314520e2fac6f6a?w=800&fit=max',
     'location': {
       'lat': -12.112300,
@@ -551,7 +551,7 @@ var data = [
   },
   {
     'name': 'Arepa Cafe',
-    'type': 'Venezolana',
+    'type': 'Comida venezolana',
     'photo': 'http://www.seriouseats.com/recipes/images/2012/04/20111214-bean-soup-arepas-pork-stew-primary.jpeg',
     'location': {
       'lat': -12.145215,
@@ -576,7 +576,7 @@ var data = [
   },
   {
     'name': 'El Budare Resto Bar',
-    'type': 'Venezolana',
+    'type': 'Comida venezolana',
     'photo': 'http://images-gmi-pmc.edge-generalmills.com/c6a649cf-f7cc-4c85-a83a-d90b950211e3.jpg',
     'location': {
       'lat': -12.145559,
@@ -601,7 +601,7 @@ var data = [
   },
   {
     'name': 'La Bodega de la Trattoria',
-    'type': 'Italiana',
+    'type': 'Comida italiana',
     'photo': 'https://www.pookspantry.com/wp-content/uploads/2016/06/2-PP.jpg',
     'location': {
       'lat': -12.1119517,
@@ -626,7 +626,7 @@ var data = [
   },
   {
     'name': 'La Bodega de la Trattoria',
-    'type': 'Italiana',
+    'type': 'Comida italiana',
     'photo': 'https://i.ytimg.com/vi/-W1bC8Iv4ok/maxresdefault.jpg',
     'location': {
       'lat': -12.076449,
