@@ -32,6 +32,24 @@ $(document).ready(function() {
   setTimeout(function() {
     $('#splash-screen').fadeOut(1500);
   }, 3000);
+
+  // Obtenemos el value del input
+  $('#input-filter').keypress(function(){
+    var inputFilter = $(this).val();
+    console.log(inputFilter);
+    var currencies = [];
+    for(var i in data){
+      currencies.push('Comida ' + data[i].type);
+    }
+
+    $('#input-filter').autocomplete({
+      lookup: currencies,
+      onSelect: function (suggestion) {
+        var thehtml = suggestion.value ;
+        $('#suggestion').html(thehtml);
+      }
+    });
+  });
 });
 
 // geolocalización
@@ -48,9 +66,9 @@ var locations = coordinates;
 
 function initMap() {
   var map = new google.maps.Map($('#map')[0], {
-    center: {	lat: -34.397,
-        		lng: 150.644},
-      			zoom: 10
+    center: { lat: -34.397,
+            lng: 150.644},
+            zoom: 10
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -63,7 +81,7 @@ function initMap() {
       };
 
       infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
+      infoWindow.setContent('You Are Here!');
       map.setCenter(pos);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
@@ -91,3 +109,4 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     'Error: The Geolocation service failed.' :
     'Error: Your browser doesn\'t support geolocation.');
 }
+

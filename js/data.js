@@ -1,6 +1,7 @@
 var data = [
   {
     'name': 'Restaurante El Cardenal',
+    'type': 'Mexicana',
     'location': {
       'lat': 19.347198,
       'lng': -99.188840
@@ -27,7 +28,7 @@ var data = [
   },
   {
     'name': 'Trattoria della Casa Nuova',
-    'type food': 'Italiana',
+    'type': 'Italiana',
     'location': {
       'lat': 19.346844,
       'lng': -99.188971
@@ -54,7 +55,7 @@ var data = [
   },
   {
     'name': 'Perú Gourmet',
-    'type food': 'Peruana',
+    'type': 'Peruana',
     'location': {
       'lat': -12.045560,
       'lng': -77.030645
@@ -81,7 +82,7 @@ var data = [
   },
   {
     'name': 'El Rinconcito Arequipeño',
-    'type food': 'Peruana',
+    'type': 'Peruana',
     'location': {
       'lat': -12.083779,
       'lng': -77.031331
@@ -107,278 +108,278 @@ var data = [
     ]
   },
   {
-	    'name': 'Maido',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.125455,
-	      'lng': -77.030562
+	  'name': 'Maido',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.125455,
+	    'lng': -77.030562
+	  },
+	  'country': 'Perú',
+	  'direction': 'Calle San Martin 399, Miraflores',
+	  'menu': [
+	    {
+	   'name': 'Sashimi Erizo',
+	   'price': 7.5,
+	   'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    },
-	    'country': 'Perú',
-	    'direction': 'Calle San Martin 399, Miraflores',
-	    'menu': [
-	      {
-	        'name': 'Sashimi Erizo',
-	        'price': 7.5,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Asado de Tira Nitsu',
-	        'price': 99,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Nigiri Toro',
-	        'price': 43,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
+	   {
+	      'name': 'Asado de Tira Nitsu',
+	      'price': 99,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Nigiri Toro',
+	      'price': 43,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
 	  },
   {
-	    'name': 'Costanera 700',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.116711,
-	      'lng': -77.045214
-	    },
-	    'country': 'Perú',
-	    'direction': 'Av. Del Ejercito 421, Lima',
-	    'menu': [
-	      {
-	        'name': 'Lomo fino',
-	        'price': 58,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Sashimi Mixto',
-	        'price': 39,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Chilcano el Sarcay',
-	        'price': 36,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
+	  'name': 'Costanera 700',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.116711,
+	    'lng': -77.045214
 	  },
-  {
-	    'name': 'Osaka Pardo and Aliaga',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.106001,
-	      'lng': -77.038750
+	  'country': 'Perú',
+	  'direction': 'Av. Del Ejercito 421, Lima',
+	  'menu': [
+	    {
+	      'name': 'Lomo fino',
+	      'price': 58,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    },
-	    'country': 'Perú',
-	    'direction': 'Av. Pardo y Aliaga 640, San Isidro',
-	    'menu': [
-	      {
-	        'name': 'Ceviche Nikkei',
-	        'price': 30,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Shrimp Crocante',
-	        'price': 28,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Maki Nori Furai',
-	        'price': 35,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
-	  },
-  {
-	    'name': 'Edo Sushi Bar Miraflores',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.120124,
-	      'lng': -77.035911
+	    {
+	      'name': 'Sashimi Mixto',
+	      'price': 39,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    },
-	    'country': 'Perú',
-	    'direction': 'Calle Berlin 601, Miraflores',
-	    'menu': [
-	      {
-	        'name': 'Furai Maki',
-	        'price': 20,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Samurai Maki',
-	        'price': 25,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Mira Maki',
-	        'price': 40,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
-	  },
+	    {
+	      'name': 'Chilcano el Sarcay',
+	      'price': 36,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
   {
-	    'name': 'Ache',
-	    'type food': 'Japonesa',
-	    'location': {
+	  'name': 'Osaka Pardo and Aliaga',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.106001,
+	    'lng': -77.038750
+	    },
+	  'country': 'Perú',
+	  'direction': 'Av. Pardo y Aliaga 640, San Isidro',
+	  'menu': [
+	    {
+	      'name': 'Ceviche Nikkei',
+	      'price': 30,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Shrimp Crocante',
+	      'price': 28,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Maki Nori Furai',
+	      'price': 35,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
+  {
+	  'name': 'Edo Sushi Bar Miraflores',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.120124,
+	    'lng': -77.035911
+	  },
+	  'country': 'Perú',
+	  'direction': 'Calle Berlin 601, Miraflores',
+	  'menu': [
+	    {
+	      'name': 'Furai Maki',
+	      'price': 20,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Samurai Maki',
+	      'price': 25,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Mira Maki',
+	      'price': 40,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
+  {
+	  'name': 'Ache',
+	  'type': 'Japonesa',
+	  'location': {
 	      'lat': -12.128603,
 	      'lng': -77.026598
 	    },
-	    'country': 'Perú',
-	    'direction': 'Av. la Paz 1055, Miraflores',
-	    'menu': [
-	      {
-	        'name': '40 piezas de Maki',
-	        'price': 109,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': '30 piezas de Maki',
-	        'price': 149,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Ikura y Tobiko con Huevos de Codorniz',
-	        'price': 30,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
-	  },
-  {
-	    'name': 'La Bistecca',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.106582,
-	      'lng': -77.037253
+	  'country': 'Perú',
+	  'direction': 'Av. la Paz 1055, Miraflores',
+	  'menu': [
+	    {
+	      'name': '40 piezas de Maki',
+	      'price': 109,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    },
-	    'country': 'Perú',
-	    'direction': 'Av. Los Conquistadores 1048, San Isidro',
-	    'menu': [
-	      {
-	        'name': '40 piezas de Maki',
-	        'price': 109,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': '30 piezas de Maki',
-	        'price': 149,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Ikura y Tobiko con Huevos de Codorniz',
-	        'price': 30,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
-	  },
-  {
-	    'name': 'Tzuru Restaurante Nikkei',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.096922,
-	      'lng': -77.016002
+	    {
+	      'name': '30 piezas de Maki',
+	      'price': 149,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    },
-	    'country': 'Perú',
-	    'direction': 'Calle 21, #707, Lima',
-	    'menu': [
-	      {
-	        'name': '20 Piezas de Sushi y Maki',
-	        'price': 70,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Nigiri',
-	        'price': 50,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Shiokoji',
-	        'price': 25,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
-	  },
+	    {
+	      'name': 'Ikura y Tobiko con Huevos de Codorniz',
+	      'price': 30,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
   {
-	    'name': 'Osaka',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.101913,
-	      'lng': -77.971430
-	    },
-	    'country': 'Perú',
-	    'direction': 'Av. El Polo # 660, Santiago de surco',
-	    'menu': [
-	      {
-	        'name': 'Sushi',
-	        'price': 30,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Carne en Lomo Balsamico',
-	        'price': 50,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Conchas Agriducles con Crunchis',
-	        'price': 60,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
+	  'name': 'La Bistecca',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.106582,
+	    'lng': -77.037253
 	  },
+	  'country': 'Perú',
+	  'direction': 'Av. Los Conquistadores 1048, San Isidro',
+	  'menu': [
+	    {
+	      'name': '40 piezas de Maki',
+	      'price': 109,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': '30 piezas de Maki',
+	      'price': 149,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Ikura y Tobiko con Huevos de Codorniz',
+	      'price': 30,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
   {
-	    'name': 'DonDoh',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.106145,
-	      'lng': -77.037036
-	    },
-	    'country': 'Perú',
-	    'direction': 'Av. Conquistadores #999, San Isidro',
-	    'menu': [
-	      {
-	        'name': 'Green Mill',
-	        'price': 28,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Salmon Tataki',
-	        'price': 34,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Black Burger',
-	        'price': 38,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
+	  'name': 'Tzuru Restaurante Nikkei',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.096922,
+	    'lng': -77.016002
 	  },
+	  'country': 'Perú',
+	  'direction': 'Calle 21, #707, Lima',
+	  'menu': [
+	    {
+	      'name': '20 Piezas de Sushi y Maki',
+	      'price': 70,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Nigiri',
+	      'price': 50,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Shiokoji',
+	      'price': 25,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
   {
-	    'name': 'Sushi Cage Swissôtel Lima',
-	    'type food': 'Japonesa',
-	    'location': {
-	      'lat': -12.097466,
-	      'lng': -77.038026
-	    },
-	    'country': 'Perú',
-	    'direction': 'Avenida Santo Toribio 173-Via Central 150 | Swissotel, Lima',
-	    'menu': [
-	      {
-	        'name': 'Tiradito Mixto',
-	        'price': 20,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Medio Sushi Acebichado',
-	        'price': 30,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      },
-	      {
-	        'name': 'Sashimi',
-	        'price': 25,
-	        'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
-	      }
-	    ]
+	  'name': 'Osaka',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.101918,
+	    'lng': -76.971440
 	  },
+	  'country': 'Perú',
+	  'direction': 'Av. El Polo # 660, Santiago de surco',
+	  'menu': [
+	    {
+	      'name': 'Sushi',
+	      'price': 30,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Carne en Lomo Balsamico',
+	      'price': 50,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Conchas Agriducles con Crunchis',
+	      'price': 60,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
+  {
+	  'name': 'DonDoh',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.106145,
+	    'lng': -77.037036
+	  },
+	  'country': 'Perú',
+	  'direction': 'Av. Conquistadores #999, San Isidro',
+	  'menu': [
+	    {
+	      'name': 'Green Mill',
+	      'price': 28,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Salmon Tataki',
+	      'price': 34,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Black Burger',
+	      'price': 38,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
+  {
+	  'name': 'Sushi Cage Swissôtel Lima',
+	  'type': 'Japonesa',
+	  'location': {
+	    'lat': -12.097466,
+	    'lng': -77.038026
+	  },
+	  'country': 'Perú',
+	  'direction': 'Avenida Santo Toribio 173-Via Central 150 | Swissotel, Lima',
+	  'menu': [
+	    {
+	      'name': 'Tiradito Mixto',
+	      'price': 20,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Medio Sushi Acebichado',
+	      'price': 30,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    },
+	    {
+	      'name': 'Sashimi',
+	      'price': 25,
+	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
+	    }
+	  ]
+	},
   {
     'name': 'Restaurant el Sillar',
-    'type food': 'Peruana',
+    'type': 'Peruana',
     'location': {
       'lat': -12.117631,
       'lng': -77.030284
@@ -405,7 +406,7 @@ var data = [
   },
   {
     'name': 'Rinconcito Punto y Sabor Arequipa',
-    'type food': 'Peruana',
+    'type': 'Peruana',
     'location': {
       'lat': -12.084607,
       'lng': -77.030101
@@ -432,7 +433,7 @@ var data = [
   },
   {
     'name': 'La Muralla',
-    'type food': 'Peruana',
+    'type': 'Peruana',
     'location': {
       'lat': -12.052238,
       'lng': -77.034036
@@ -459,7 +460,7 @@ var data = [
   },
   {
     'name': 'Taqueria No Te Rajes',
-    'type food': 'Mexicana',
+    'type': 'Mexicana',
     'location': {
       'lat': -12.125587,
       'lng': -77.021341
@@ -486,7 +487,7 @@ var data = [
   },
   {
     'name': 'Como Agua para Chocolate',
-    'type food': 'Mexicana',
+    'type': 'Mexicana',
     'location': {
       'lat': -12.096833,
       'lng': -77.035490
@@ -513,7 +514,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type food': 'Mexicana',
+    'type': 'Mexicana',
     'location': {
       'lat': -12.132703,
       'lng': -77.031631
@@ -540,7 +541,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type food': 'Mexicana',
+    'type': 'Mexicana',
     'location': {
       'lat': -12.118573,
       'lng': -77.032809
@@ -567,7 +568,7 @@ var data = [
   },
   {
     'name': 'Chili´s',
-    'type food': 'Mexicana',
+    'type': 'Mexicana',
     'location': {
       'lat': -12.112300,
       'lng': -77.011541
@@ -594,7 +595,7 @@ var data = [
   },
   {
     'name': 'Arepa Cafe',
-    'type food': 'Venezolana',
+    'type': 'Venezolana',
     'location': {
       'lat': -12.145215,
       'lng': -77.021681
@@ -621,7 +622,7 @@ var data = [
   },
   {
     'name': 'El Budare Resto Bar',
-    'type food': 'Venezolana',
+    'type': 'Venezolana',
     'location': {
       'lat': -12.145559,
       'lng': -77.018984
@@ -648,7 +649,7 @@ var data = [
   },
   {
     'name': 'La Bodega de la Trattoria',
-    'type food': 'Italiana',
+    'type': 'Italiana',
     'location': {
       'lat': -12.1119517,
       'lng': -77.033144
@@ -675,7 +676,7 @@ var data = [
   },
   {
     'name': 'La Bodega de la Trattoria',
-    'type food': 'Italiana',
+    'type': 'Italiana',
     'location': {
       'lat': -12.076449,
       'lng': -77.082461

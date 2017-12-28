@@ -72,4 +72,12 @@ body {
   }
 }
 
-/*fin splash screen*/
+/*autocomplete*/
+
+.autocomplete-suggestions {
+ 	border: 1px solid #999;
+  background: #fff;
+  cursor: default;
+  overflow: auto;
+}
+

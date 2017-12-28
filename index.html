@@ -54,14 +54,18 @@
         <div class="col-xs-12">
           <h2 class="text-center">Comida cerca de ti</h2>
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Filtrar restaurants">
+            <input type="text" class="form-control" placeholder="Filtrar restaurants" id="input-filter">
             <i class="fa fa-search input-group-addon icon" aria-hidden="true"></i>
           </div>
+        </div>
+        <div class="col-xs-12">
+          <div id="suggestion"></div>
         </div>
       </div>
     </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6rjMeHx_5BKT9KMTXXL4rLnjmjp_bDk&callback=initMap">
