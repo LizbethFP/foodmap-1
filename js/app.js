@@ -32,23 +32,28 @@ $(document).ready(function() {
   setTimeout(function() {
     $('#splash-screen').fadeOut(1500);
   }, 3000);
-
   // Obtenemos el value del input
   $('#input-filter').keypress(function() {
-    var inputFilter = $(this).val();
-    console.log(inputFilter);
     $('#input-filter').autocomplete({
       lookup: currencies,
       onSelect: function(suggestion) {
-      var thehtml = suggestion.value ;
-        $('#suggestion').html(thehtml);
+        var inputFilter = $(this).val();
+        console.log(suggestion.value);
+        //realizamos el filtro 
+        for(var i in data) {
+          if (data[i].type == inputFilter) {
+            console.log(data[i])
+            var nameRestaurant = data[i].name;
+            $('#suggestion').append(nameRestaurant);
+            var directionRestaurant = data[i].direction;
+            $('#suggestion').append(directionRestaurant);
+          }
+        }
       }
     });
-    for(var i in data) {
-      if (data[i].type == inputFilter) {
-      console.log('ok');}
-    }
+   
   });
+
 });
 
 // geolocalización
