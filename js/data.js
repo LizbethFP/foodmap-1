@@ -160,7 +160,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Osaka Pardo and Aliaga',
 	  'type': 'Japonesa',
@@ -187,7 +187,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Edo Sushi Bar Miraflores',
 	  'type': 'Japonesa',
@@ -214,7 +214,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Ache',
 	  'type': 'Japonesa',
@@ -241,7 +241,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'La Bistecca',
 	  'type': 'Japonesa',
@@ -268,7 +268,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Tzuru Restaurante Nikkei',
 	  'type': 'Japonesa',
@@ -295,7 +295,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Osaka',
 	  'type': 'Japonesa',
@@ -322,7 +322,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'DonDoh',
 	  'type': 'Japonesa',
@@ -349,7 +349,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
 	  'name': 'Sushi Cage Swissôtel Lima',
 	  'type': 'Japonesa',
@@ -376,7 +376,7 @@ var data = [
 	      'photo': 'http://dummyimage.com/133x195.png/cc0000/ffffff'
 	    }
 	  ]
-	},
+  },
   {
     'name': 'Restaurant el Sillar',
     'type': 'Peruana',

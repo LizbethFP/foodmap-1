@@ -34,21 +34,20 @@ $(document).ready(function() {
   }, 3000);
 
   // Obtenemos el value del input
-  $('#input-filter').keypress(function(){
+  $('#input-filter').keypress(function() {
     var inputFilter = $(this).val();
     console.log(inputFilter);
-    var currencies = [];
-    for(var i in data){
-      currencies.push('Comida ' + data[i].type);
-    }
-
     $('#input-filter').autocomplete({
       lookup: currencies,
-      onSelect: function (suggestion) {
-        var thehtml = suggestion.value ;
+      onSelect: function(suggestion) {
+      var thehtml = suggestion.value ;
         $('#suggestion').html(thehtml);
       }
     });
+    for(var i in data) {
+      if (data[i].type == inputFilter) {
+      console.log('ok');}
+    }
   });
 });
 
@@ -67,8 +66,8 @@ var locations = coordinates;
 function initMap() {
   var map = new google.maps.Map($('#map')[0], {
     center: { lat: -34.397,
-            lng: 150.644},
-            zoom: 10
+      lng: 150.644},
+    zoom: 10
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -109,4 +108,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     'Error: The Geolocation service failed.' :
     'Error: Your browser doesn\'t support geolocation.');
 }
-
