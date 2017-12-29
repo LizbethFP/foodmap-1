@@ -34,44 +34,44 @@ $(document).ready(function() {
   }, 3000);
   // Obtenemos el value del input
   $('#input-filter').autocomplete({
-      lookup: currencies,
-      onSelect: function(suggestion) {
-        var inputFilter = $(this).val();
-        $('#suggestion').html('');
-        // realizamos el filtro
-        for (var i in data) {
-          if (data[i].type === inputFilter) {
-            var imgContainer = $('<div/>', {
-              'class': 'col-xs-6 cont-img cont-sugg',
-              'id': 'img-container_' + i,
-              'data-toggle': 'tooltip',
-              'data-placement':'top',
-              'title': 'Restaurant:' + '' + data[i].name,
-              'data-img': data[i].photo
-            });
-            console.log(i + ':' + data[i].name);
-            var imgFood = $('<img>', {
-              'class': 'img-responsive food-imgs',
-              'src': data[i].photo
-            });
-            $('#suggestion').append(imgContainer);
-            $('#img-container_' + i).append(imgFood);
-          }
-        }
-        $('.cont-sugg').mouseover(function() {
-          $(this).append($(this).data('title'));
-        });
-
-        $('.cont-sugg').mouseout(function() {
-          var imgFood = $('<img>', {
-            'class': 'img-responsive center-block food-imgs',
-            'src': $(this).data('img')
+    lookup: currencies,
+    onSelect: function(suggestion) {
+      var inputFilter = $(this).val();
+      $('#suggestion').html('');
+      // realizamos el filtro
+      for (var i in data) {
+        if (data[i].type === inputFilter) {
+          var imgContainer = $('<div/>', {
+            'class': 'col-xs-6 cont-img cont-sugg',
+            'id': 'img-container_' + i,
+            'data-toggle': 'tooltip',
+            'data-placement': 'top',
+            'title': 'Restaurant:' + '' + data[i].name,
+            'data-img': data[i].photo
           });
-          $(this).html('');
-          $(this).append(imgFood);
-        });
+          console.log(i + ':' + data[i].name);
+          var imgFood = $('<img>', {
+            'class': 'img-responsive food-imgs',
+            'src': data[i].photo
+          });
+          $('#suggestion').append(imgContainer);
+          $('#img-container_' + i).append(imgFood);
+        }
       }
-    });
+      $('.cont-sugg').mouseover(function() {
+        $(this).append($(this).data('title'));
+      });
+
+      $('.cont-sugg').mouseout(function() {
+        var imgFood = $('<img>', {
+          'class': 'img-responsive center-block food-imgs',
+          'src': $(this).data('img')
+        });
+        $(this).html('');
+        $(this).append(imgFood);
+      });
+    }
+  });
 });
 
 // geolocalización
