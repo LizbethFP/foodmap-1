@@ -43,15 +43,30 @@ $(document).ready(function() {
         for (var i in data) {
           if (data[i].type === inputFilter) {
             var imgContainer = $('<div/>', {
-                'class' : 'col-xs-6 cont-img',
-                'id'    : 'img-container_' + i
+              'class': 'col-xs-6 cont-img',
+              'id': 'img-container_' + i
             });
             var imgFood = $('<img>', {
-                'class' : 'img-responsive center-block food-imgs',
-                'src'   : data[i].photo
+              'class': 'img-responsive center-block food-imgs',
+              'src': data[i].photo
             });
             $('#suggestion').append(imgContainer);
-            $('#img-container_'+i).append(imgFood);
+            $('#img-container_' + i).append(imgFood);
+            $('#img-container_' + i).mouseover(function() {
+              var textMouseOver = $('<div/>', {
+                'class': 'text-m-over',
+                'id': 'text-mouse-over_' + i
+              });
+              $(this).append(data[i].name);
+            });
+
+            $('#img-container_' + i).mouseout(function() {
+              var textMouseOut = $('<div/>', {
+                'class': 'text-m-out',
+                'id': 'text-mouse-out_' + i
+              });
+              $(this).html('');
+            });
           }
         }
       }

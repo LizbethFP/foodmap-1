@@ -102,7 +102,7 @@ var data = [
   {
 	  'name': 'Maido',
 	  'type': 'Comida japonesa',
-    'photo': 'http://perudelights.com/wp-content/uploads/2012/04/r4.jpg',
+    'photo': 'https://i.blogs.es/ddf305/sashimi-20de-20erizo2/450_1000.jpg',
 	  'location': {
 	    'lat': -12.125455,
 	    'lng': -77.030562
