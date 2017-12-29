@@ -38,22 +38,20 @@ $(document).ready(function() {
       lookup: currencies,
       onSelect: function(suggestion) {
         var inputFilter = $(this).val();
+        $('#suggestion').html('');
         // realizamos el filtro
         for (var i in data) {
           if (data[i].type === inputFilter) {
-            var nameRestaurant = data[i].name;
-            var infRestaurant = $('<p/>', {
-                'class' : 'col-xs-6',
-                'id'    : 'id_' + i
+            var imgContainer = $('<div/>', {
+                'class' : 'col-xs-6 cont-img',
+                'id'    : 'img-container_' + i
             });
-            var imgContainer = $('<img>', {
-                'class' : 'col-xs-6 img-responsive',
-                'id'    : 'img_' + i,
+            var imgFood = $('<img>', {
+                'class' : 'img-responsive center-block food-imgs',
                 'src'   : data[i].photo
             });
-            $('#suggestion').append(infRestaurant);
-            $('#id_'+ i).append(nameRestaurant);
             $('#suggestion').append(imgContainer);
+            $('#img-container_'+i).append(imgFood);
           }
         }
       }

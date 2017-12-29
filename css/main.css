@@ -81,3 +81,13 @@ body {
   overflow: auto;
 }
 
+.cont-img {
+  margin-top: 10px;
+  height: 200px;
+}
+
+.food-imgs {
+  border-radius: 25px;
+  height: inherit;
+}
+
