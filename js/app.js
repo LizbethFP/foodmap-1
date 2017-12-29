@@ -43,11 +43,17 @@ $(document).ready(function() {
           if (data[i].type === inputFilter) {
             var nameRestaurant = data[i].name;
             var infRestaurant = $('<p/>', {
-                'class' : 'col-xs-12',
+                'class' : 'col-xs-6',
                 'id'    : 'id_' + i
+            });
+            var imgContainer = $('<img>', {
+                'class' : 'col-xs-6 img-responsive',
+                'id'    : 'img_' + i,
+                'src'   : data[i].photo
             });
             $('#suggestion').append(infRestaurant);
             $('#id_'+ i).append(nameRestaurant);
+            $('#suggestion').append(imgContainer);
           }
         }
       }
