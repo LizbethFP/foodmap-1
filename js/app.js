@@ -33,8 +33,7 @@ $(document).ready(function() {
     $('#splash-screen').fadeOut(1500);
   }, 3000);
   // Obtenemos el value del input
-  $('#input-filter').keypress(function() {
-    $('#input-filter').autocomplete({
+  $('#input-filter').autocomplete({
       lookup: currencies,
       onSelect: function(suggestion) {
         var inputFilter = $(this).val();
@@ -43,35 +42,36 @@ $(document).ready(function() {
         for (var i in data) {
           if (data[i].type === inputFilter) {
             var imgContainer = $('<div/>', {
-              'class': 'col-xs-6 cont-img',
-              'id': 'img-container_' + i
+              'class': 'col-xs-6 cont-img cont-sugg',
+              'id': 'img-container_' + i,
+              'data-toggle': 'tooltip',
+              'data-placement':'top',
+              'title': 'Restaurant:' + '' + data[i].name,
+              'data-img': data[i].photo
             });
+            console.log(i + ':' + data[i].name);
             var imgFood = $('<img>', {
-              'class': 'img-responsive center-block food-imgs',
+              'class': 'img-responsive food-imgs',
               'src': data[i].photo
             });
             $('#suggestion').append(imgContainer);
             $('#img-container_' + i).append(imgFood);
-            $('#img-container_' + i).mouseover(function() {
-              var textMouseOver = $('<div/>', {
-                'class': 'text-m-over',
-                'id': 'text-mouse-over_' + i
-              });
-              $(this).append(data[i].name);
-            });
-
-            $('#img-container_' + i).mouseout(function() {
-              var textMouseOut = $('<div/>', {
-                'class': 'text-m-out',
-                'id': 'text-mouse-out_' + i
-              });
-              $(this).html('');
-            });
           }
         }
+        $('.cont-sugg').mouseover(function() {
+          $(this).append($(this).data('title'));
+        });
+
+        $('.cont-sugg').mouseout(function() {
+          var imgFood = $('<img>', {
+            'class': 'img-responsive center-block food-imgs',
+            'src': $(this).data('img')
+          });
+          $(this).html('');
+          $(this).append(imgFood);
+        });
       }
     });
-  });
 });
 
 // geolocalización

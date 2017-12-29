@@ -75,7 +75,7 @@ body {
 /*autocomplete*/
 
 .autocomplete-suggestions {
- 	border: 1px solid #999;
+  border: 1px solid #999;
   background: #fff;
   cursor: default;
   overflow: auto;
@@ -83,6 +83,7 @@ body {
 
 .cont-img {
   margin-top: 10px;
+  margin-bottom: 10px;
   height: 200px;
 }
 
@@ -91,3 +92,7 @@ body {
   height: inherit;
 }
 
+.cont-sugg {
+  font-weight: 700;
+  font-size: 20px;
+}
