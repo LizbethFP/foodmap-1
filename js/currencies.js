@@ -1,4 +1,4 @@
-//tipos de comida para el autocomplete
+// tipos de comida para el autocomplete
 var currencies = [
   { 'value': 'Comida mexicana'},
   { 'value': 'Comida peruana'},
