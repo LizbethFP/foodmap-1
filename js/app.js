@@ -49,7 +49,7 @@ $(document).ready(function() {
               'data-name': data[i].name,
               'data-img': data[i].photo
             });
-            console.log(i + ':' + data[i].name);
+
             var imgFood = $('<img>', {
               'class': 'img-responsive center-block food-imgs',
               'src': data[i].photo
