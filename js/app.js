@@ -33,44 +33,56 @@ $(document).ready(function() {
     $('#splash-screen').fadeOut(1500);
   }, 3000);
   // Obtenemos el value del input
-  $('#input-filter').autocomplete({
-    lookup: currencies,
-    onSelect: function(suggestion) {
-      var inputFilter = $(this).val();
-      $('#suggestion').html('');
-      // realizamos el filtro
-      for (var i in data) {
-        if (data[i].type === inputFilter) {
-          var imgContainer = $('<div/>', {
-            'class': 'col-xs-6 cont-img cont-sugg',
-            'id': 'img-container_' + i,
-            'data-toggle': 'tooltip',
-            'data-placement': 'top',
-            'title': 'Restaurant:' + '' + data[i].name,
-            'data-img': data[i].photo
-          });
-          console.log(i + ':' + data[i].name);
-          var imgFood = $('<img>', {
-            'class': 'img-responsive food-imgs',
-            'src': data[i].photo
-          });
-          $('#suggestion').append(imgContainer);
-          $('#img-container_' + i).append(imgFood);
-        }
-      }
-      $('.cont-sugg').mouseover(function() {
-        $(this).append($(this).data('title'));
-      });
+  $(function() {
+    $('#input-filter').autocomplete({
+      source: currencies,
+      autoFocus: true,
+      select: function(event, ui) {
+        var inputFilter = ui.item.value;
+        $('#suggestion').html('');
+        // realizamos el filtro
+        for (var i in data) {
+          if (data[i].type === inputFilter) {
+            var imgContainer = $('<div/>', {
+              'class': 'col-xs-6 cont-img cont-sugg',
+              'id': 'img-container_' + i,
+              'data-name': data[i].name,
+              'data-img': data[i].photo
+            });
+            console.log(i + ':' + data[i].name);
+            var imgFood = $('<img>', {
+              'class': 'img-responsive center-block food-imgs',
+              'src': data[i].photo
+            });
 
-      $('.cont-sugg').mouseout(function() {
-        var imgFood = $('<img>', {
-          'class': 'img-responsive center-block food-imgs',
-          'src': $(this).data('img')
+            var overFood = $('<div/>', {
+              'class': 'overlay'
+            });
+
+            var txtFood = $('<p/>', {
+              'class': 'text'
+            }).text(data[i].name);
+
+            overFood.append(txtFood);
+
+            $('#suggestion').append(imgContainer);
+            $('#img-container_' + i).append(imgFood);
+            $('#img-container_' + i).append(overFood);
+          }
+        }
+        // mouseout y mouseover
+
+        $('.cont-sugg').mouseover(function() {
+          var overlay = $(this).children()[1];
+          overlay.style.display = 'block';
         });
-        $(this).html('');
-        $(this).append(imgFood);
-      });
-    }
+
+        $('.cont-sugg').mouseout(function() {
+          var overlay = $(this).children()[1];
+          overlay.style.display = 'none';
+        });
+      }
+    });
   });
 });
 
@@ -94,7 +106,6 @@ function initMap() {
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
-  // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = {
@@ -120,7 +131,7 @@ function initMap() {
     });
   });
 
-  // Add a marker clusterer to manage the markers.
+  //  marker clusterer
   var markerCluster = new MarkerClusterer(map, markers,
     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 }
