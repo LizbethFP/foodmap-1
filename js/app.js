@@ -56,7 +56,13 @@ $(document).ready(function() {
             var overFood = $('<div/>', {
               'class': 'overlay',
               'data-toggle': 'modal',
-              'data-target': '#name-food'
+              'data-target': '#name-food',
+              'data-namerest': data[i].name,
+              'data-price': data[i].menu[2].price,
+              'data-direction': data[i].direction,
+              'data-menu1': data[i].menu[0].name,
+              'data-menu2': data[i].menu[1].name,
+              'data-menu3': data[i].menu[2].name,
             });
 
             var txtFood = $('<p/>', {
@@ -68,16 +74,8 @@ $(document).ready(function() {
             $('#suggestion').append(imgContainer);
             $('#img-container_' + i).append(imgFood);
             $('#img-container_' + i).append(overFood);
-
-            // modal
-            $('.name-rest').attr('id','title_' + i);
-            $('#title_' + i).text(data[i].name);
-            $('.diretion').text(data[i].direction);
-            $('.price').text(data[i].menu[2].price);
-            $('#menu1').text(data[i].menu[0].name);
-            $('#menu2').text(data[i].menu[1].name);
-            $('#menu3').text(data[i].menu[2].name);
-          }        
+            $('.name-rest').attr('id', 'name-rest');
+          }
         }
         // mouseout y mouseover
         $('.cont-sugg').mouseover(function() {
@@ -91,6 +89,20 @@ $(document).ready(function() {
         });
       }
     });
+  });
+
+
+  $('#name-food').on('show.bs.modal', function(event) {
+    var restaurante = $(event.relatedTarget); // activa modal
+    var nombre = restaurante.data('namerest'); // Extraer la información de atributos de datos
+    var direction = restaurante.data('direction');
+    var modal = $(this);
+    modal.find('#name-rest').text(nombre);
+    $('#direction').text(direction);
+    modal.find('#price').text(restaurante.data('price'));
+    modal.find('#menu1').text(restaurante.data('menu1'));
+    modal.find('#menu2').text(restaurante.data('menu2'));
+    modal.find('#menu3').text(restaurante.data('menu3'));
   });
 });
 
