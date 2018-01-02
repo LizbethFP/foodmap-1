@@ -84,12 +84,13 @@ body {
 .cont-img {
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 200px;
+  height: 150px;
 }
 
 .food-imgs {
   border-radius: 25px;
   height: inherit;
+  width: 100%;
 }
 
 .overlay {
@@ -108,11 +109,37 @@ body {
 .text {
   white-space: nowrap;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.text:hover{
+  text-decoration: none;
+  color: white;
+}
+
+i.icon {
+  font-size: 20px;
+}
+
+i.fa.fa-home.text-center.icon,
+i.fa.fa-usd.text-center.icon,
+i.fa.fa-cutlery.text-center.icon 
+{
+  display: block;
+  padding: 10px;
+}
+
+.sub-t {
+  margin-top: 5px;
+}
+
+.text-md {
+  color: #000;
+  font-size: 16px;
 }

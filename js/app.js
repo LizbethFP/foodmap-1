@@ -45,22 +45,22 @@ $(document).ready(function() {
           if (data[i].type === inputFilter) {
             var imgContainer = $('<div/>', {
               'class': 'col-xs-6 cont-img cont-sugg',
-              'id': 'img-container_' + i,
-              'data-name': data[i].name,
-              'data-img': data[i].photo
+              'id': 'img-container_' + i
             });
 
             var imgFood = $('<img>', {
-              'class': 'img-responsive center-block food-imgs',
+              'class': 'img-responsive food-imgs',
               'src': data[i].photo
             });
 
             var overFood = $('<div/>', {
-              'class': 'overlay'
+              'class': 'overlay',
+              'data-toggle': 'modal',
+              'data-target': '#name-food'
             });
 
             var txtFood = $('<p/>', {
-              'class': 'text'
+              'class': 'text',
             }).text(data[i].name);
 
             overFood.append(txtFood);
@@ -68,10 +68,18 @@ $(document).ready(function() {
             $('#suggestion').append(imgContainer);
             $('#img-container_' + i).append(imgFood);
             $('#img-container_' + i).append(overFood);
-          }
+
+            // modal
+            $('.name-rest').attr('id','title_' + i);
+            $('#title_' + i).text(data[i].name);
+            $('.diretion').text(data[i].direction);
+            $('.price').text(data[i].menu[2].price);
+            $('#menu1').text(data[i].menu[0].name);
+            $('#menu2').text(data[i].menu[1].name);
+            $('#menu3').text(data[i].menu[2].name);
+          }        
         }
         // mouseout y mouseover
-
         $('.cont-sugg').mouseover(function() {
           var overlay = $(this).children()[1];
           overlay.style.display = 'block';
