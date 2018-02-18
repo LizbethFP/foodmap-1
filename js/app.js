@@ -28,6 +28,51 @@ $(document).ready(function() {
   }
 
   splash();
+  for (var i in data) {
+    var imgContainer = $('<div/>', {
+      'class': 'col-6 col-md-4 cont-img cont-sugg',
+      'id': 'img-container_' + i
+    });
+
+    var imgFood = $('<img>', {
+      'class': 'img-fluid food-imgs',
+      'src': data[i].photo
+    });
+
+    var overFood = $('<div/>', {
+      'class': 'overlay',
+      'data-toggle': 'modal',
+      'data-target': '#name-food',
+      'data-namerest': data[i].name,
+      'data-price': data[i].menu[2].price,
+      'data-direction': data[i].direction,
+      'data-menu1': data[i].menu[0].name,
+      'data-menu2': data[i].menu[1].name,
+      'data-menu3': data[i].menu[2].name,
+    });
+
+    var txtFood = $('<p/>', {
+      'class': 'text',
+    }).text(data[i].name);
+
+    overFood.append(txtFood);
+
+    $('#suggestion').append(imgContainer);
+    $('#img-container_' + i).append(imgFood);
+    $('#img-container_' + i).append(overFood);
+    $('.name-rest').attr('id', 'name-rest');
+
+    // mouseout y mouseover
+    $('.cont-sugg').mouseover(function() {
+      var overlay = $(this).children()[1];
+      overlay.style.display = 'block';
+    });
+
+    $('.cont-sugg').mouseout(function() {
+      var overlay = $(this).children()[1];
+      overlay.style.display = 'none';
+    });
+  }
 
   setTimeout(function() {
     $('#splash-screen').fadeOut(1500);
@@ -44,12 +89,12 @@ $(document).ready(function() {
         for (var i in data) {
           if (data[i].type === inputFilter) {
             var imgContainer = $('<div/>', {
-              'class': 'col-xs-6 cont-img cont-sugg',
+              'class': 'col-6 col-md-4 cont-img cont-sugg',
               'id': 'img-container_' + i
             });
 
             var imgFood = $('<img>', {
-              'class': 'img-responsive food-imgs',
+              'class': 'img-fluid food-imgs',
               'src': data[i].photo
             });
 
@@ -122,7 +167,7 @@ function initMap() {
   var map = new google.maps.Map($('#map')[0], {
     center: { lat: -34.397,
       lng: 150.644},
-    zoom: 10
+    zoom: 15
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -132,6 +177,7 @@ function initMap() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
+      console.log(pos);
 
       infoWindow.setPosition(pos);
       infoWindow.setContent('You Are Here!');

@@ -1,17 +1,38 @@
 body {
-  background-color: #2b2b2b;
+  background-color: #f5f8f9;
   font-family: 'Raleway', sans-serif;
-  color: #ffb300;
+  color: #b7d84b;
+}
+
+header.container.box-header {
+  background-color: #e8eaeb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1.text-center.loading-text {
+  text-shadow: 2px 2px #484949;
+  font-size: 4em;
 }
 
 .map {
   border-style: none;
   border-image: none;
-  min-height: 200px;
+  min-height: 450px;
 }
 
 .fa.icon {
   display: table-cell;
+}
+
+.bg-txt {
+  background-image: url(../assets/images/fondotext.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 440px;
 }
 
 /* splash screen*/
@@ -22,7 +43,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #2b2b2b;
+  background-color: #f5f8f9;
   z-index: 999;
 }
 
@@ -38,8 +59,8 @@ body {
 }
 
 .loading-text {
-  color: #f7b617;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #b7d84b;
+  font-family: 'Delius Unicase', cursive;
 }
 
 .loading-text .letter {
@@ -142,4 +163,10 @@ i.fa.fa-cutlery.text-center.icon
 .text-md {
   color: #000;
   font-size: 16px;
+}
+
+button.btn.btn-block {
+  color: white;
+  font-weight: bold;
+  background-color: #a3832e;
 }

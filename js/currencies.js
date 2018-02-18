@@ -4,5 +4,5 @@ var currencies = [
   { 'value': 'Comida peruana'},
   { 'value': 'Comida japonesa'},
   { 'value': 'Comida italiana'},
-  { 'value': 'Comida venezolana'}
+  { 'value': 'Comida venezolana'},
 ];
